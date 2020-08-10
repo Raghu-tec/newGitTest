@@ -1,0 +1,5 @@
+.image{
+    background-image: url('src\assets\corona2.jpg');
+    background-size: cover;
+    height: 35em;
+}

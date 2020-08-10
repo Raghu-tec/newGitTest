@@ -1,0 +1,14 @@
+<div class="image" style="color:brown;">
+ <h1>{{title}}</h1>
+ <label>Country</label>
+ <select (change)="getCountry($event.target.value)">
+   <option *ngFor="let country of countries" value={{country.Slug}}>
+     {{country.Country}}
+   </option>
+ </select>
+ <br><br>
+ <button (click)="getCoronaData()">Get CoronaVirus Data</button>
+ <h1> Total Confirmed Cases: {{confirmed}} </h1>
+ <h1> Total Recovered Cases: {{recovered}} </h1>
+ <h1> Total Deaths Cases: {{deaths}} </h1>
+</div>
